@@ -111,9 +111,5 @@ public class HomeController {
 		courseList.add(new Course("shuxue", "123"));
 		return courseList;
 	}
-	
-	@RequestMapping(value = "/home", method = RequestMethod.GET)
-	public ModelAndView findMyCollege(HttpServletRequest request, HttpServletResponse response) throws IOException {
-		return new ModelAndView("home");
-	}
+
 }
